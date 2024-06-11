@@ -3,45 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Forecast App</title>
   </head>
   <body>
-    <header>
-      <input type="search" placeholder="Enter a city..." required />
-      <input type="submit" value="Enter" />
-    </header>
-    <hr />
-    <main>
-      <div>
-        <h1>Paris</h1>
-      </div>
-      <p class="date-time">
-        Saturday, <br />
-        9:50am
-      </p>
+    <div class="weather-app">
+      <header>
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          class="input"
+          required
+        />
+        <input type="submit" value="Enter" class="search-input" />
+      </header>
+      <hr />
+      <main>
+        <div>
+          <h1>Paris</h1>
+        </div>
+        <p class="date-time">
+          Saturday, <br />
+          9:50am
+        </p>
 
-      <div>
-        12°c
+        <div class="temp">12°c</div>
         <br />
-        Sunny ☀️
-      </div>
-      <p class="humidity-wind">
-        Humidity: 46% <br />
-        Wind: 4.63 km/h
-      </p>
-    </main>
-    <hr />
-    <footer>
-      Coded by
-      <a href="https://github.com/maiadee" target="_blank">Maia de Emmony</a>,
-      is open sourced on
-      <a href="https://github.com/maiadee/Forecast-App" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://maia-forecast-app.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+        <div class="temp-description">Sunny ☀️</div>
+        <p class="humidity-wind">
+          Humidity: 46% <br />
+          Wind: 4.63 km/h
+        </p>
+      </main>
+      <hr />
+      <footer>
+        Coded by
+        <a href="https://github.com/maiadee" target="_blank">Maia de Emmony</a>,
+        is open sourced on
+        <a href="https://github.com/maiadee/Forecast-App" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://maia-forecast-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
